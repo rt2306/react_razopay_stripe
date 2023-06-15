@@ -8,8 +8,7 @@ function App() {
     const createImg = async () => {
       const response = await axios.post("http://localhost:5500/Open/create", {
         prompt,
-      });
-      console.log(response,"responseresponseresponse");
+      }); 
       setImage(response.data);
     };
   
